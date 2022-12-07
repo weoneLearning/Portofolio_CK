@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ck | Portfolio</title>
+    <link rel="shortcut icon" href="./IMG/mylogock.png" type="image/x-icon">
+    <!---------------------Local links-------------->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!---------------------online links------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./IMG/mylogock.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header"><i class="fa fa-home"></i>home</a></li>
+                    <li><a href="#about"><i class="fa fa-book-bookmark"></i>about</a></li>
+                    <li><a href="#services"><i class="fa fa-cogs"></i>services</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-box-open"></i>portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-mail-bulk"></i>contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>hi, i'm <span>Charif Abdallah</span><br>from comoros</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!------------------------about me----------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./IMG/me.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">about me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero ut quae vitae, quibusdam accusantium earum repellat delectus doloribus ipsum consectetur blanditiis eos quos illo neque a ullam quia unde.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('educaation')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>web development</span><br>web app development</li>
+                            <li><span>CNNA</span><br>routing, switching parameter</li>
+                            <li><span>design</span><br>logo, and cards designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br>CEO of weone indutry.</li>
+                            <li><span>3rd october 2021 - 31 october 2021</span><br>CCNA training at infosoft valey ltd.</li>
+                            <li><span>2020 - 2021</span><br>built java swing project.</li>
+                            <li><span>2020 - 2021</span><br>built a databasse projet.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educaation">
+                        <ul>
+                            <li><span>2022</span><br>7th semester ungerdraduate</li>
+                            <li><span>2018</span><br>graduated in high school</li>
+                            <li><span>2015</span><br>graduated in college. </li>
+                            <li><span>2011</span><br>graduated in primary school. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------serveces------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">my services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non distinctio mollitia sapiente ipsa. In sit mollitia nemo!</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-pencil-alt"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non distinctio mollitia sapiente ipsa. In sit mollitia nemo!</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>app design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non distinctio mollitia sapiente ipsa. In sit mollitia nemo!</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">my work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="./IMG/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>The app connects you to the talented people around the world. download it from playstore
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./IMG/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>music app</h3>
+                        <p>The app connects you to the talented people around the world. download it from playstore
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./IMG/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>online shopping media app</h3>
+                        <p>The app connects you to the talented people around the world. download it from playstore
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+
+    <!---------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i> charifabdallah@iut-dhaka.edu</p>
+                    <p><i class="fas fa-phone-square"></i> +880 016 4342 3987</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/yass_ch19"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <a href="./IMG/my-cv.pdf" download class="btn btn2">download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright &copy; Cha. made with <i class="fas fa-heart"></i> by CK Learning</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="./JS/main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyVk_dNhEXgaFix0sBhcLKKvA4-t-BXaaFr4EnP93JzXsx7LF4P1biuEeDkoEj1zpz4/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
+
+</html>
